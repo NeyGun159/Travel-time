@@ -1,0 +1,455 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.nav{
+    padding: 35px 190px 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    width: 41px;
+    height: 41px;
+    background-size: contain;
+}
+
+.nav__list{
+    list-style: none;
+    font-size: 16px;
+    line-height: 19px;
+    color: #B8BECD;
+}
+
+.nav__item{
+    display: inline-block;
+    padding-right: 35px;
+    cursor: pointer;
+}
+
+.login-btn{
+    color: #FB8F1D;
+    background-color: #fff;
+    margin-right: 18px;
+    cursor: pointer;                                                                 
+}
+
+.register-btn{
+    background-color: #FB8F1D;
+    color: #fff;
+    cursor: pointer;                                
+}
+
+.login-btn, .register-btn{
+    padding: 0;
+    font-size: 15px;
+    border-radius: 8px;
+    width: 132px;
+    height: 44px;
+    border: 2px solid #FB8F1D;
+}
+
+.login-btn>p, .register-btn>p{
+    margin: auto;
+}
+.text-active{
+    color: #202336;
+}
+
+.holiday-finder{
+    padding-left: 120px;
+
+}
+
+.holiday-finder__tag{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'Playfair Display';
+    line-height: 80px;
+    color: #202336;
+    mix-blend-mode: normal;
+    width: 356px;
+}
+
+.holiday-finder__name{
+    font-size: 22px;
+    color: #202336;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+
+.holiday-finder__name::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 32px;
+    background-color: #202336;
+    border-radius: 4px;
+    transform: translateY(43px);
+}
+
+.holiday-finder__wrap{
+    display: flex;
+    width: 471.5px;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.holiday-finder__tools{
+    width: 220px;
+    height: 52px;
+    font-size: 15px;
+    color: #4A4C53;
+    border: 0.8px solid #AFB0B9;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+.tool__text{
+    padding: 0 0 0 31px;
+    line-height: 52px;
+    margin: 0;
+}
+
+.tool__icon{
+    position: absolute;
+    padding-left: 180px;
+}
+.holiday-finder__btn{
+    color: #fff;
+    background-color: #FB8F1D;
+    width: 180px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    margin: 12px 0 18px 0;
+    cursor: pointer;
+}
+.holiday-finder__img{
+    position: absolute;
+    width: 687px;
+    height: 654px;
+    right: 0;
+    top: 0;
+    margin: 100px 148px 0 0;
+    background-size: contain;
+}
+
+.way{
+    display: flex;
+    align-items: center;
+    padding-top: 288px;
+}
+
+.way__img{
+    width: 659px;
+    height: 634px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 141px;
+    margin-right: 102px;
+}
+
+.way__title{
+    width: 481px;
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    color: #000;
+    font-weight: 700;
+}
+
+.way__description{
+    width: 450px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #7D7987;
+    padding: 20px 0 33px 0;
+}
+
+.destinations{
+    padding: 0 220px 232px 220px;
+}
+
+.destinations__filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 50px;
+}
+
+.filter__title{
+    font-family: 'Playfair Display';
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.filter__control{
+    font-size: 17px;
+    color: #FB8F1D;
+    display: flex;
+    align-items: center;
+}
+
+.filter__control-text{
+    margin-right: 11px;
+}
+
+.destinations__list{
+    margin: 56px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.destinations__item{
+    width: 261px;
+    height: 332px;
+    background-size: contain;
+    border-radius: 8px;
+}
+
+.guides{
+    display: flex;
+    align-items: center;
+    padding-bottom: 248px;
+}
+
+.guides__infor{
+    margin: 0 80px 0 220px;
+}
+
+.guides___title{
+    width: 400px;
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.guides__description{
+    width: 450px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #7D7987;
+    padding: 20px 0 39px 0;
+}
+
+.guides__img{
+    width: 599px;
+    height: 542px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.testimonial{
+    display: flex;
+    padding-bottom: 228px;
+}
+
+.testimonial__wrap{
+    padding: 0 184px 0 220px;
+}
+
+.testimonial__wrap>p{
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 145px 0;
+}
+
+.testimonial__rate-icon{
+    font-size: 23px;
+    line-height: 24px;
+    color: #FFBB0C;
+}
+
+.testimonial__rate-icon-star{
+    padding-right: 16px;
+}
+
+.testimonial__rate{
+    width: 450px;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 30px 0 40px 0;
+}
+
+.testimonial__name{
+    font-size: 22px;
+    line-height: 48px;
+    color: #000;
+    font-weight: 700;
+}
+
+.testimonial__from{
+    font-size: 18px;
+    line-height: 48px;
+    color: #000;
+}
+
+.testimonial__img{
+    width: 384px;
+    height: 491px;
+    border-radius: 16px;
+    background-size: contain;
+    margin-top: 110px;    
+}
+
+.stories{
+    padding: 0 220px 271px 220px;
+}
+
+.stories__filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 50px;
+}
+
+.stories__list{
+    display: flex;
+    justify-content: space-between;
+    margin: 56px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.stories__item{
+    position: relative;
+}
+
+.stories__img{
+    width: 261px;
+    height: 332px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.stories__wrap{
+    position: absolute;
+    top: 0;
+    margin-top: 244px;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.stories__title{
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 30px;
+    width: 219px;
+    color: #000;
+}
+
+.stories__description{
+    width: 266px;
+    font-size: 15px;
+    line-height: 26px;
+    color: #7D7987;
+    padding: 13px 0 23px 0;
+}
+
+.stories__read-more{
+    font-size: 15px;
+    line-height: 28px;
+    color: #FB8F1D;
+}
+
+.btn{
+    width: 164px;
+    height: 48px;
+    color: #fff;
+    background-color: #FB8F1D;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    line-height: 48px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer{
+    background-color: #F9F9FB;
+    padding: 78px 191px 0 191px;
+}
+
+.footer__contain{
+    border-bottom: 1px solid #C4C4C4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__wrapper{
+    background-color: #F9F9FB;
+}
+
+.footer__logo{
+    width: 41px;
+    height: 41px;
+    background-size: contain;
+    margin-bottom: 26px;
+}
+
+.footer__desc{
+    width: 301px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #848484;
+}
+
+.footer__text{
+    width: 391px;
+    font-size: 17px;
+    line-height: 28px;
+    color: #848484;
+    padding: 55px 108px 81px 0;
+}
+
+.footer__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__item{
+
+}
+
+.footer__title{
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #000;
+    padding-bottom: 16px;
+    text-decoration: none;
+}
+
+.footer__link{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 38px;
+    color: #848484;
+}
+
+.footer__bottom{
+    background-color: #F9F9FB;
+    padding: 30px 0 32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 35px;
+}
+
+.footer__icon{
+    font-size: 21px;
+    line-height: 23px;
+}
+
+
