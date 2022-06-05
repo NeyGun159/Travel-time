@@ -1,5 +1,9 @@
 body{
     font-family: 'Roboto', sans-serif;
+    
+}
+.app{
+    overflow: hidden;
 }
 .nav{
     padding: 35px 190px 0 120px;
@@ -57,8 +61,9 @@ body{
 }
 
 .holiday-finder{
-    padding-left: 120px;
-
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .holiday-finder__tag{
@@ -126,12 +131,11 @@ body{
     cursor: pointer;
 }
 .holiday-finder__img{
-    position: absolute;
+    background-repeat: no-repeat;
     width: 687px;
     height: 654px;
     right: 0;
     top: 0;
-    margin: 100px 148px 0 0;
     background-size: contain;
 }
 
@@ -208,11 +212,20 @@ body{
     height: 332px;
     background-size: contain;
     border-radius: 8px;
+    background-repeat: no-repeat;
+    transition: transform ease-in 0.1s;
+    will-change: transform; 
+}
+
+.destinations__item:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
 }
 
 .guides{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-bottom: 248px;
 }
 
@@ -220,7 +233,7 @@ body{
     margin: 0 80px 0 220px;
 }
 
-.guides___title{
+.guides__title{
     width: 400px;
     font-family: 'Playfair Display';
     font-size: 36px;
@@ -246,6 +259,7 @@ body{
 
 .testimonial{
     display: flex;
+    justify-content: space-between;
     padding-bottom: 228px;
 }
 
@@ -296,8 +310,10 @@ body{
     width: 384px;
     height: 491px;
     border-radius: 16px;
-    background-size: contain;
-    margin-top: 110px;    
+    background-size: cover;
+    margin: 110px 324px 0 0;   
+    background-repeat: no-repeat; 
+    height: 422px;
 }
 
 .stories{
@@ -319,22 +335,20 @@ body{
     list-style: none;
 }
 
-.stories__item{
-    position: relative;
+.stories__item:hover{
+    transform: translateY(-1px);
+    cursor: pointer;
 }
 
 .stories__img{
-    width: 261px;
-    height: 332px;
-    background-size: contain;
+    width: 265px;
+    height: 200px;
+    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
 }
 
 .stories__wrap{
-    position: absolute;
-    top: 0;
-    margin-top: 244px;
     background-color: #fff;
     z-index: 2;
 }
@@ -378,6 +392,7 @@ body{
 .footer{
     background-color: #F9F9FB;
     padding: 78px 191px 0 191px;
+    overflow: hidden;
 }
 
 .footer__contain{
@@ -418,10 +433,6 @@ body{
     margin: 0;
 }
 
-.footer__item{
-
-}
-
 .footer__title{
     font-size: 19px;
     font-weight: 600;
@@ -451,5 +462,6 @@ body{
     font-size: 21px;
     line-height: 23px;
 }
-
-
+.nav__item:hover{
+    color: #000;
+}

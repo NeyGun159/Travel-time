@@ -1,0 +1,345 @@
+/* Mobile and tablet */
+@media (max-width: 1023px) {
+    .app{
+        padding: 0 50px;
+        overflow: hidden;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        z-index: 10;
+        height: 70px;
+        padding: 10px 50px;
+    }
+    .nav__bar{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+    .nav__bar>span {
+        background: gray;
+        width: 100%;
+        position: absolute;
+        height: 2px;
+        left: 0;
+        top: 9px;
+        transition: 0.2s;
+    }
+    .nav__bar::after {
+        content: "";
+        background: gray;
+        width: 100%;
+        position: absolute;
+        height: 2px;
+        bottom: 0;
+        transition: 0.2s;
+        left: 0;
+    }
+    .nav__bar::before {
+        content: "";
+        background: gray;
+        width: 100%;
+        position: absolute;
+        height: 2px;
+        top: 0;
+        transition: 0.2s;
+        left: 0;
+    }
+    .nav__bar.active >span{
+        display: none;
+    }
+    .nav__bar.active::before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .nav__bar.active::after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .nav__logo{
+        width: 41px;
+        height: 41px;
+    }
+    .nav__bar{
+        font-size: 41px;
+    }
+    .nav__list{
+        display: none;
+    }
+    .nav__list.active{
+        display: flex;
+        margin: 0;
+        margin-top: 90px;
+        background-color: #1abe84;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nav__item{
+        color: #fff;
+    }
+    .nav__item:nth-child(1){
+        padding-top: 20px;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .holiday-finder{
+        padding: 90px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .holiday-finder__wrap {
+        width: 330px;
+    }
+    .holiday-finder__tag{
+        margin: 0 0 64px 0;
+    }
+    .holiday-finder__img{
+        width: 330px;
+        height: 314.14px;
+        margin: 0;
+    }
+    .holiday-finder__tools{
+        width: 150px;
+        height: 42px;
+        position: relative;
+    }
+    .tool__text{
+        padding-left: 8px;
+    }
+    .tool__icon{
+        position: absolute;
+        right: 0;
+        padding-right: 8px;
+    }
+    .way{
+        padding: 160px 0 160px 0;
+        justify-content: space-between;
+    }
+    .way__title, .way__description{
+        width: 330px;
+    }
+    .way__img{
+        width: 330px;
+        height: 276.400px;
+        margin: 0;
+    }
+    .destinations{
+        padding: 0;
+    }
+    .destinations__list{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 30px;
+        max-width: 1150px;
+        gap: 30px;
+    }
+    .destinations__item{
+        width: 100%;
+        height: 445.45px;
+    }
+    .guides{
+        padding: 160px 0;
+    }
+    .guides__description{
+        width: 278px;
+    }
+    .guides__title {
+        width: 278px;
+    }
+    .guides__infor{
+        margin: 0;
+        width: 278px;
+    }
+    .guides__img{
+        width: 361.75px;
+        height: 327.325px;
+    }
+    .testimonial{
+        align-items: center;
+    }
+    .testimonial__wrap{
+        padding: 0;
+        width: 330px;
+    }
+    .testimonial__rate{
+        width: 330px;
+        font-size: 20px;
+    }
+    .testimonial__img{
+        width: 330px;
+        margin: 0;
+    }
+    .stories{
+        padding: 0;
+    }
+    .stories__list{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 30px;
+
+    }
+    .stories__item{
+        width: 345px;
+    }
+    .stories__wrap{
+        margin: 0;
+    }
+    .stories__img{
+        width: 345px;
+        height: 200px;
+        background-size: cover;
+    }
+    .footer{
+        padding: 0 50px;
+    }
+    .footer__contain{
+        padding: 80px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Mobile */
+@media (max-width: 739px) {
+    .holiday-finder{
+        padding: 90px 0 0 0;
+        display: block;
+    }
+    .holiday-finder__tag{
+        width: 260px;
+        font-size: 32px;
+        margin: 0 0 40px 0;
+        line-height: 43.2px;
+    }
+    .holiday-finder__wrap{
+        width: 275px;
+    }
+    .holiday-finder__tools{
+        width: 132px;
+        height: 42px;
+    }
+    .tool__icon{
+        padding-left: 114px;
+    }
+    .holiday-finder__img{
+        width: 271px;
+        height: 262px;
+    }
+    .way{
+        padding: 60px 0;
+    }
+    .way__img{
+        display: none;
+    }
+    .way__title{
+        font-size: 22px;
+        width: 260px;
+    }
+    .way__description{
+        font-size: 12px;
+        width: 275.2px;
+        line-height: 21.75px;
+    }
+    .destinations{
+        padding: 0;
+    }
+    .destinations__filter{
+        display: block;
+    }
+    .filter__title{
+        font-size: 22px;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+    .filter__control{
+        font-size: 16px;
+        line-height: normal;
+
+    }
+    .destinations__list{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .destinations__item{
+        width: 100%;
+        background-size: cover;
+    }
+    .guides{
+        display: block;
+        padding: 60px 0;
+    }
+    .guides__infor{
+        margin: 0;
+    }
+    .guides__title{
+        font-size: 22px;
+    }
+    .guides__description{
+        font-size: 12px;
+        width: 275.2px;
+        line-height: 17.6px;
+    }
+    .guides__img{
+        width: 192px;
+        height: 174px;
+        margin: 30px auto;
+    }
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+        align-items: center;
+        gap: 30px;
+    }
+    .testimonial__wrap{
+        padding: 0;
+    }
+    .testimonial__wrap>p{
+        font-size: 22px;
+        line-height: normal;
+        margin-bottom: 46px;
+    }
+    .testimonial__rate{
+        width: 275.2px;
+        font-size: 20px;
+        line-height: normal;
+        font-weight: 100;
+    }
+    .testimonial__img{
+        width: 166px;
+        height: 212px;
+        margin: 0;
+    }
+    .stories{
+        padding: 0;
+    }
+    .stories__list{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr;
+        margin: 50px 0 30px 0;
+    }
+    .footer{
+        padding: 80px 50px 0 50px;
+    }
+    .footer__contain{
+        display: grid;
+        gap: 30px;
+    }
+    .footer__list:nth-child(4){
+        padding-bottom: 80px;
+    }
+}
