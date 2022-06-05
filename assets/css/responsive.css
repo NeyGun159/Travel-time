@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* Mobile and tablet */
 @media (max-width: 1023px) {
     .app{
@@ -343,7 +343,7 @@
     .footer__list:nth-child(4){
         padding-bottom: 80px;
     }
-=======
+}
 /* Mobile and tablet */
 @media (max-width: 1023px) {
     .app{
@@ -688,5 +688,4 @@
     .footer__list:nth-child(4){
         padding-bottom: 80px;
     }
->>>>>>> dae9af6204c845055ed0d963833461f080001e5b
 }
